@@ -1,0 +1,132 @@
+/* start global roles */
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #e0e8ff;
+    }
+    .card img:not(.icon) {
+        width: -webkit-fill-available;
+    }
+    .container {
+        padding: 0 15px;
+        margin: auto;
+    }
+/* end global roles */
+/* start the section */
+    .bakg {
+        width: 100%;
+    }
+    .bakg.mbl {
+        display: none;
+    }
+    .card {
+        background-color: white;
+        position: absolute;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    .under {
+        padding: 35px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3 {
+        word-spacing: 3px;
+        color: #252f49;
+        font-size: 27px;
+    }
+    h3 + p {
+        color: #777;
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+    .plans {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f8f9fe;
+        border-radius: 0.5rem;
+        margin: 20px 0;
+        padding: 20px;
+        align-items: center;
+    }
+    .leftside {
+        display: flex;
+    }
+    .leftside .text {
+        margin-left: 15px;
+    }
+    /* mobiles */
+    @media (max-width: 767px) {
+        .bakg.dsk {
+            display: none;
+        }
+        .bakg.mbl {
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .card {
+            position: unset;
+            width: unset;
+            transform: unset;
+            margin: 60px 0;
+        }
+        .under {
+            padding: 25px;
+        }
+        h3 {
+            font-size: 21px;
+        }
+        h3 + p {
+            font-size: 15px;
+        }
+        .plans {
+            padding: 10px;
+        }
+        .leftside .text {
+            margin-left: 10px;
+        }
+    }
+    .icon {
+        width: 40px;
+    }
+    h5 + p {
+        color: #777;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    a {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    button {
+        width: 100%;
+        padding: 15px 0px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    button:nth-child(1) {
+        color: white;
+        background-color: #382ae1;
+        margin-top: 10px;
+        box-shadow: 0px 12px 20px 0px #9e99d9;
+    }
+    button:nth-child(2) {
+        color: #777;
+        background-color: white;
+        width: 50%;
+        margin-top: 25px;
+        padding: 0;
+    }
+/* end the section */
